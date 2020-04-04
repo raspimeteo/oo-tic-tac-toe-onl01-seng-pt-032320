@@ -116,10 +116,9 @@ class TicTacToe
       while !over? do
         turn
         won?
-      end
         if won?
-          puts "Congratulate #{winner}, you have won"
-        end
+          puts "Congratulate #{winner}, you have won!"
+      end
     end
 
 

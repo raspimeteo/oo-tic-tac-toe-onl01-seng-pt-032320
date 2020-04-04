@@ -27,10 +27,10 @@ class TicTacToe
       input_string = gets        ## collect string from keyboard
       input = input_string.chomp ## cut of the new line
       i = input.to_i             ## make integer from input
-      if (input.to_i => 1 || input.to_i <= 9)  ## if between 1-9 is valid input
-        index = input.to+i -1
+      if (i => 1 || i <= 9)  ## if between 1-9 is valid input
+        index = i - 1
       else
-       puts wrong input
+       raise_error(ArgumentError)
      end
     end
 

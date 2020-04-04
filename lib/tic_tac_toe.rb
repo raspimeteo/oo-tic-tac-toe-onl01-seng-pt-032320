@@ -96,7 +96,7 @@ class TicTacToe
     
     def draw?
       binding.pry
-      turn_count == 9 ? true : false
+      turn_count
     end
 
 

@@ -94,9 +94,10 @@ class TicTacToe
       return false
     end
     
-    def draw?
+    def full?
       @board.all{|token| token == "X" || token == "O"}
     end
+    
 
 
 

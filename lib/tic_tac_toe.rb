@@ -24,6 +24,7 @@ class TicTacToe
     end
     
     def input_to_index(input_string)
+      input = input_string.to_i
       if input_string == "" 
         raise_error(ArgumentError)
       end

@@ -23,8 +23,8 @@ class TicTacToe
         puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     end
     
-    def input_to_index(input_string)
-      input = input_string.to_i
+    def input_to_index(input)
+      input = input.to_i
       input.between?(1..9) ? @index=input-1 : raise_error(ArgumentError)
       index
     end

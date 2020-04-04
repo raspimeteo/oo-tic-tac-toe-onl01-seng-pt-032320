@@ -24,7 +24,7 @@ class TicTacToe
     end
     
     def input_to_index
-      input = gets
+      input = gets.chomp
       binding.pry
       @index = input.to_i - 1
     end

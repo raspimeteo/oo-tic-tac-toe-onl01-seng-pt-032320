@@ -23,9 +23,7 @@ class TicTacToe
         puts " #{@board[6]} | #{@board[7]} | #{@board[8]} "
     end
     
-    def input_to_index
-      input_string = gets.chomp        ## collect string from keyboard and   
-                                       ## cutoff /n
+    def input_to_index(input_string)
       if input_string == "" 
         raise_error(ArgumentError)
       end

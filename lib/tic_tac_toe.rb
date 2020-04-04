@@ -111,6 +111,10 @@ class TicTacToe
         @board[win_combination.first]
       end
     end
+    
+    def play
+      
+    end
 
 
 

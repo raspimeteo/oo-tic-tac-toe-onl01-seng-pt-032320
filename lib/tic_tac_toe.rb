@@ -24,10 +24,8 @@ class TicTacToe
     end
     
     def input_to_index(input)
-      ## binding.pry
       input = input.to_i
-      ## binding.pry
-      @index = input - 1
+      index = input - 1
     end
 
 

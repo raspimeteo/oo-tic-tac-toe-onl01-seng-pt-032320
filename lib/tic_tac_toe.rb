@@ -85,15 +85,18 @@ class TicTacToe
         place_0 = @board[win_combination[0]]
         place_1 = @board[win_combination[1]]
         place_2 = @board[win_combination[2]]
-
         if place_0 == "X" && place_1 == "X" && place_2 == "X"
           return win_combination
         elsif place_0 == "O" && place_1 == "O" && place_2 =="O"
           return win_combination
         end
-      }
-    return false
-end
+        }
+      return false
+    end
+    
+    def draw?
+      turn_count == 9 ? true : false
+    end
 
 
 

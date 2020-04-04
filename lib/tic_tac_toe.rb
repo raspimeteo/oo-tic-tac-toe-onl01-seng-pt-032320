@@ -116,6 +116,7 @@ class TicTacToe
       while !over? do
         turn
         if won?
+          binding.pry
           puts "Congratulations #{winner}!"
       end
     end

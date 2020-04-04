@@ -24,10 +24,10 @@ class TicTacToe
     end
     
     def input_to_index
-      input = gets
-      input = input.chomp
-      i = input.to_i
-      if (input.to_i => 1 || input.to_i <= 9)
+      input_string = gets        ## collect string from keyboard
+      input = input_string.chomp ## cut of the new line
+      i = input.to_i             ## make integer from input
+      if (input.to_i => 1 || input.to_i <= 9)  ## if between 1-9 is valid input
         index = input.to+i -1
       else
        puts wrong input

@@ -47,6 +47,10 @@ class TicTacToe
         true
       end
     end
+    
+    def turn_count
+      count = 0
+      @board.each {field
 
 
 

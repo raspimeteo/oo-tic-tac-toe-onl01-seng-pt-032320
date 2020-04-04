@@ -28,7 +28,7 @@ class TicTacToe
       input = input.to_i
       binding.pry
       input.between?(1..9) ? @index=input-1 : raise_error(ArgumentError)
-      @index
+       return @index
     end
 
 

@@ -14,9 +14,9 @@ class TicTacToe
                         [6, 4, 2]]
 
     def display_board
-        string_1 = "#{@board[0]} | #{@board[1]} | #{@board[2]}"
-        string_2 = "#{@board[3]} | #{@board[4]} | #{@board[5]}"
-        string_3 = "#{@board[6]} | #{@board[7]} | #{@board[8]}"
+        string_1 = " #{@board[0]} | #{@board[1]} | #{@board[2]}"
+        string_2 = " #{@board[3]} | #{@board[4]} | #{@board[5]}"
+        string_3 = " #{@board[6]} | #{@board[7]} | #{@board[8]}"
         
         puts string_1
 

@@ -26,6 +26,7 @@ class TicTacToe
     def input_to_index
       input = gets
       input = input.chomp
+      i = input.to_i
       if (input.to_i => 1 || input.to_i <= 9)
         index = input.to+i -1
       else

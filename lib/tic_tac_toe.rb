@@ -115,7 +115,6 @@ class TicTacToe
     def play
       while !over? do
         turn
-        won?
         if won?
           puts "Congratulate #{winner}, you have won!"
       end

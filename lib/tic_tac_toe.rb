@@ -30,7 +30,7 @@ class TicTacToe
         raise_error(ArgumentError)
       end
       input = Integer(input_string,10) ## make integer from input
-      input.between?(1..9) ? @index=i-1 : raise_error(ArgumentError)
+      input.between?(1..9) ? @index=input-1 : raise_error(ArgumentError)
       index
     end
 

@@ -115,6 +115,7 @@ class TicTacToe
     def play
       turn
       won?
+      over?
       puts "Congratulate #{winner}, you have won"
     end
 

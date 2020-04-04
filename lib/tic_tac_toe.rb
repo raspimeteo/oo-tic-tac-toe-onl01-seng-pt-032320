@@ -113,7 +113,8 @@ class TicTacToe
     end
     
     def play
-      
+      turn
+      puts "Congratulate #{winner}, you have won"
     end
 
 

@@ -24,6 +24,7 @@ class TicTacToe
     end
     
     def input_to_index
+      binding.pry
       input_string = gets        ## collect string from keyboard
       input = input_string.chomp ## cut of the new line
       i = input.to_i             ## make integer from input

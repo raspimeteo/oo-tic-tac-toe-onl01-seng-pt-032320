@@ -95,8 +95,7 @@ class TicTacToe
     end
     
     def draw?
-      binding.pry
-      turn_count
+      @board.all{|token| token == "X" || token == "O"}
     end
 
 

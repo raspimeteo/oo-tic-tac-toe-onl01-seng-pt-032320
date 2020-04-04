@@ -50,6 +50,7 @@ class TicTacToe
     
     def turn_count
       count = 0
+      binding.pry
       @board.each do |field|
         if (field = "X" || field = "O")
           count += 1

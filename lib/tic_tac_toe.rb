@@ -74,6 +74,7 @@ class TicTacToe
       if index.between?(0,8)
         valid_move?(index)
         move(index, current_player)
+        display_board
       else
         turn
       end

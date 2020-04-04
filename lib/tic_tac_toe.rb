@@ -26,7 +26,9 @@ class TicTacToe
     def input_to_index
       input_string = gets.chomp        ## collect string from keyboard and   
                                        ## cutoff /n
-      if input_string == "" raise_error(ArgumentError)
+      if input_string == "" 
+        raise_error(ArgumentError)
+      end
       input = Integer(input_string,10) ## make integer from input
       input.between?(1..9) ? index=i-1 : raise_error(ArgumentError)
       

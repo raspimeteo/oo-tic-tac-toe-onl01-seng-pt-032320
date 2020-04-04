@@ -27,11 +27,8 @@ class TicTacToe
       input_string = gets        ## collect string from keyboard
       input = input_string.chomp ## cut of the new line
       i = input.to_i             ## make integer from input
-      if (i => 1 || i <= 9)  ## if between 1-9 is valid input
-        index = i - 1
-      else
-       raise_error(ArgumentError)
-     end
+      i.between?(1..9) ? index=i-1 : raise_error(ArgumentError)
+      
     end
 
 

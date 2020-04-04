@@ -23,7 +23,7 @@ class TicTacToe
     
     def input_to_index
       input = gets
-      @index = input - 1
+      @index = input.to_i - 1
     end
 
 

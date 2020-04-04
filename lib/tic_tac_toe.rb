@@ -75,7 +75,6 @@ class TicTacToe
         valid_move?(index)
         move(index, current_player)
         display_board
-        over?
       else
         turn
       end
@@ -114,9 +113,13 @@ class TicTacToe
     end
     
     def play
-      turn
-      over?
-      puts "Congratulate #{winner}, you have won"
+      while !over? do
+        turn
+        won?
+      end
+        if won?
+          puts "Congratulate #{winner}, you have won"
+        end
     end
 
 

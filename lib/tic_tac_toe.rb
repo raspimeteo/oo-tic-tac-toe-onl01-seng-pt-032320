@@ -65,6 +65,20 @@ class TicTacToe
         "O"
       end
     end
+    
+    
+    def turn
+      puts "Enter a field 1-9:"
+      input = gets.chomp
+      index = input.to_i -1
+      if index.between?(0,8)
+        valid_move(index)
+        move(index, current_player)
+      else
+        turn
+      end
+    end
+        
 
 
 

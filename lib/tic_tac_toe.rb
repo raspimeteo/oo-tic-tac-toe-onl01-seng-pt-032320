@@ -120,6 +120,7 @@ class TicTacToe
           puts "Congratulate #{winner}, you have won!"
       end
     end
+  end
 
 
 

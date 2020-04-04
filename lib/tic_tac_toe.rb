@@ -108,14 +108,12 @@ class TicTacToe
     
     def winner
       if win_combination = won?
-        @board[win_combination.first]
+        @board[win_combination[0]]
       end
     end
     
     def play
-      while !over? do
-        turn
-        won?
+      turn until over?
         if won?
           binding.pry
           puts "Congratulations #{winner}!"
